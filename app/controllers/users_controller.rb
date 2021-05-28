@@ -5,13 +5,13 @@ class UsersController < ApplicationController
   end
 
   def create
-    create_user_object(user_params)
+    create_user_object_with(user_params)
     save_user_object
     redirect_to root_url
   end
 
   private
-  def create_user_object(user_params)
+  def create_user_object_with(user_params)
     @user = User.new(user_params)
   end
 
