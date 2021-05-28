@@ -1,0 +1,9 @@
+<%= form_with url: sessions_path, local: true do |form| %>
+  <div class='login-with-buttons'>
+    <div class='login-fields'>
+      <div class='field-input-login-field'>
+        <%= form.text_field :username, class: 'username-entry', placeholder: 'Username' %>
+      </div>
+    </div>
+  </div>
+<% end %>
