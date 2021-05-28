@@ -42,4 +42,14 @@ RSpec.describe User, type: :model do
       expect(@user).to_not be_valid
     end
   end
+
+  describe "when email is empty" do
+    before do
+      @user = User.new(username:  "user1", email: '', password: 'password1')
+    end
+
+    it 'is not valid' do
+      expect(@user).to_not be_valid
+    end
+  end
 end
