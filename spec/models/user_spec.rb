@@ -52,4 +52,15 @@ RSpec.describe User, type: :model do
       expect(@user).to_not be_valid
     end
   end
+
+  describe 'the username has already been used' do
+    before do
+      User.create(username:  "user1", email: 'user@email.com', password: 'password1')
+    end
+
+    it 'is not valid' do
+      @user = User.create(username:  "user1", email: 'user@email.com', password: 'password1')
+      expect(@user).to_not be_valid
+    end
+  end
 end

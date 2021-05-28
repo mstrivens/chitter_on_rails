@@ -18,5 +18,11 @@ RSpec.describe UsersController, type: :controller do
       post :create, params: { user: { username: "user1", password: "password1", email: 'user@email.com' } }
       expect(User.find_by(username: "user1")).to be
     end
+
+    it 're-renders the page if username is not unique' do
+      User.create(username: 'user1', password: 'password1', email: 'user@email.com')
+      post :create, params: { user: { username: "user1", password: "password1", email: 'user@email.com' } }
+      expect(response).to have_http_status(200)
+    end
   end
 end

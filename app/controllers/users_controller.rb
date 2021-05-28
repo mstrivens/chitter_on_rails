@@ -6,8 +6,11 @@ class UsersController < ApplicationController
 
   def create
     create_user_object_with(user_params)
-    save_user_object
-    redirect_to root_url, notice: "Sign up successful"
+    if save_user_object
+      redirect_to root_url, notice: "Sign up successful"
+    else
+      render :new
+    end
   end
 
   private
