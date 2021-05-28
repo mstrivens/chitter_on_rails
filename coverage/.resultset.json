@@ -19,6 +19,34 @@
           null
         ]
       },
+      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/models/user.rb": {
         "lines": [
           1,
@@ -42,28 +70,8 @@
           null,
           null
         ]
-      },
-      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/controllers/users_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1622198049
+    "timestamp": 1622199130
   }
 }
