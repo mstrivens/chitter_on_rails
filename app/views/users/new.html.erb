@@ -19,7 +19,7 @@
         <%= form.label :password %>
       </div>
       <div class="field-input">
-        <%= form.text_field :password %>
+        <%= form.password_field :password %>
       </div>
     </div>
 
@@ -28,7 +28,7 @@
         <%= form.label :email %>
       </div>
       <div class="field-input">
-        <%= form.text_field :email %>
+        <%= form.email_field :email %>
       </div>
       <div class='alert'>
         <% @user.errors.full_messages_for(:email).each do |message| %>
