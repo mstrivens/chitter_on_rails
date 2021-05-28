@@ -8,6 +8,6 @@ RSpec.feature 'new user' do
     fill_in 'Password', with: 'password1'
     fill_in 'Email', with: 'user@email.com'
     click_on "user-signup-submit"
-    expect(page).to have_content("Welcome to Chitter")
+    expect(page).to have_content("Sign up successful")
   end
 end
