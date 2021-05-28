@@ -1,16 +1,33 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-
   before do
     @user = User.new(username:  "user1", email: 'user@email.com', password: 'password1')
   end
 
-  subject { @user }
+  it 'responds to username' do
+    expect(@user).to respond_to(:username)
+  end
 
-  it { should respond_to(:username) }
-  it { should respond_to(:email) }
-  it { should respond_to(:password) }
+  it 'responds to password' do
+    expect(@user).to respond_to(:password)
+  end
 
-  it { should be_valid }
+  it 'responds to email' do
+    expect(@user).to respond_to(:email)
+  end
+
+  it 'is valid' do
+    expect(@user).to be_valid
+  end
+
+  describe "when field is empty" do
+    before do
+      @user = User.new(username:  "", email: 'user@email.com', password: 'password1')
+    end
+
+    it 'is not valid' do
+      expect(@user).to_not be_valid
+    end
+  end
 end
