@@ -1,0 +1,65 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/helpers/posts_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/helpers/users_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/controllers/posts_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1622196592
+  }
+}
