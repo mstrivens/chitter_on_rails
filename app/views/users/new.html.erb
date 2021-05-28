@@ -7,7 +7,16 @@
       </div>
       <div class="field-input">
         <%= form.text_field :username %>
-        <% end %>
       </div>
     </div>
+    <div class="form-field">
+      <div class="field-label">
+        <%= form.label :password %>
+      </div>
+      <div class="field-input">
+        <%= form.text_field :password %>
+      </div>
+    </div>
+    <input type='submit' class='form-submit' id='user-signup-submit'>
+  <% end %>
 </div>

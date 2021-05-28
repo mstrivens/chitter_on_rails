@@ -5,8 +5,8 @@ RSpec.feature 'new user' do
     visit ('/')
     click_link 'Sign-up'
     fill_in "Username", with: 'user1'
-    fill_in 'password', with: 'password1'
-    click_button 'Submit'
+    fill_in 'Password', with: 'password1'
+    click_on "user-signup-submit"
     expect(page).to have_content("Welcome to Chitter")
   end
 end
