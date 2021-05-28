@@ -30,6 +30,11 @@
       <div class="field-input">
         <%= form.text_field :email %>
       </div>
+      <div class='alert'>
+        <% @user.errors.full_messages_for(:email).each do |message| %>
+          <div><%= message %></div>
+        <% end %>
+      </div>
     </div>
 
     <input type='submit' class='form-submit' id='user-signup-submit'>
