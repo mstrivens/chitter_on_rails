@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   describe 'when fields are filled in' do
     before do
-      @user = User.new(username:  "user1", email: 'user@email.com', password: 'password1')
+      @user = User.new(username:  "user1234", email: 'user1234@email.com', password: 'password1')
     end
 
     it 'responds to username' do

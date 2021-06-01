@@ -8,7 +8,7 @@ RSpec.describe UsersController, type: :controller do
     end
 
   describe "POST/users/create" do
-    let(:create_user) { User.create(username: 'user1', password: 'password1', email: 'user@email.com') }
+    let(:create_user) { User.create(username: 'user123', password: 'password123', email: 'user123@email.com') }
     it 'creates a new user' do
       expect{ create_user }.to change{ User.count }.by(1)
     end
