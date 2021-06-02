@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   describe 'when fields are filled in' do
     before do
-      @user = User.new(username:  "user1234", email: 'user1234@email.com', password: 'password1')
+      @user = User.new(username:  "user", email: 'user@email.com', password: 'password1')
     end
 
     it 'responds to username' do
@@ -35,7 +35,7 @@ RSpec.describe User, type: :model do
 
   describe "when password is empty" do
     before do
-      @user = User.new(username:  "user1", email: 'user@email.com', password: '')
+      @user = User.new(username:  "user", email: 'user@email.com', password: '')
     end
 
     it 'is not valid' do
@@ -45,7 +45,7 @@ RSpec.describe User, type: :model do
 
   describe "when email is empty" do
     before do
-      @user = User.new(username:  "user1", email: '', password: 'password1')
+      @user = User.new(username:  "user", email: '', password: 'password1')
     end
 
     it 'is not valid' do
@@ -55,11 +55,11 @@ RSpec.describe User, type: :model do
 
   describe 'the username has already been used' do
     before do
-      User.create(username:  "user1", email: 'user@email.com', password: 'password1')
+      User.create(username:  "user", email: 'user@email.com', password: 'password1')
     end
 
     it 'is not valid' do
-      @user = User.create(username:  "user1", email: 'user1@email.com', password: 'password1')
+      @user = User.create(username:  "user", email: 'user1@email.com', password: 'password1')
       expect(@user).to_not be_valid
     end
   end

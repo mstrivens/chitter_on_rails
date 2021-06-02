@@ -10,10 +10,10 @@ RSpec.describe SessionsController, type: :controller do
 
   describe 'POST/sessions/create' do
     before (:each) do
-      User.create(username: 'user12345', password: 'password1', email: 'user12345@email.com')
+      User.create(username: 'user', password: 'password1', email: 'user@email.com')
     end
     it 'creates a session' do
-      get :create, params: { username: 'user12345', password: 'password1'  }
+      get :create, params: { username: 'user', password: 'password1'  }
       expect(response).to redirect_to(root_url)
     end
   end
