@@ -7,6 +7,8 @@ class SessionsController < ApplicationController
     if user_authenticated(params[:password])
       create_session
       redirect_to root_url
+    else
+      render :new
     end
   end
 
