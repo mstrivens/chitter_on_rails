@@ -8,3 +8,11 @@ def sign_up
   fill_in 'Email', with: 'user12@email.com'
   click_on "user-signup-submit"
 end
+
+def login
+  visit ('/')
+  click_link 'Log-In'
+  fill_in "Username", with: 'user12'
+  fill_in 'Password', with: 'password1'
+  click_on "user-login-submit"
+end
