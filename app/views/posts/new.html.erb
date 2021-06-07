@@ -1,0 +1,11 @@
+<%= form_for @post do |form| %>
+<div class='form-field'>
+  <div class='field-label'>
+  <%= form.label :post %>
+  </div>
+  <div class='field-input'>
+  <%= form.text_field :body %>
+  </div>
+  <input type="submit" name='post-submit' class="form-submit">
+</div>
+<% end %>

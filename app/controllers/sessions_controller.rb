@@ -6,10 +6,10 @@ class SessionsController < ApplicationController
     @user = User.find_by(username: params[:username])
     if user_authenticated(params[:password])
       create_session
-      redirect_to root_url
+      redirect_to root_url, notice: "Logged in!"
     else
-      render :new
       flash.now[:alert] = "Incorrect username or password"
+      render :new
     end
   end
 

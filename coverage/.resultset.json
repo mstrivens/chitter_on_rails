@@ -32,10 +32,10 @@
           null,
           null,
           1,
+          6,
+          6,
           5,
           5,
-          4,
-          4,
           null,
           1,
           1,
@@ -48,13 +48,13 @@
           null,
           null,
           1,
+          null,
+          1,
+          6,
+          null,
           null,
           1,
           5,
-          null,
-          null,
-          1,
-          4,
           null,
           null
         ]
@@ -65,17 +65,17 @@
           1,
           null,
           1,
-          21,
-          6,
-          null,
+          51,
           15,
           null,
+          36,
+          null,
           null,
           null,
           1,
           null,
           1,
-          6,
+          15,
           null,
           null
         ]
@@ -85,13 +85,13 @@
           1,
           null,
           1,
-          7,
+          8,
           null,
           null,
           1,
-          9,
-          9,
-          5,
+          10,
+          10,
+          6,
           null,
           4,
           null,
@@ -99,16 +99,29 @@
           null,
           1,
           1,
-          9,
+          10,
           null,
           null,
           1,
-          9,
+          10,
           null,
           null,
           1,
-          9,
+          10,
           null,
+          null
+        ]
+      },
+      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/models/post.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
           null
         ]
       },
@@ -122,24 +135,21 @@
           null
         ]
       },
-      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/controllers/posts_controller.rb": {
         "lines": [
           1,
           null,
           1,
-          18,
+          1,
+          null,
+          null,
+          1,
+          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1623060516
+    "timestamp": 1623075642
   }
 }
