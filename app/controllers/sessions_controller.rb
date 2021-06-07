@@ -9,7 +9,13 @@ class SessionsController < ApplicationController
       redirect_to root_url
     else
       render :new
+      flash.now[:alert] = "Incorrect username or password"
     end
+  end
+
+  def destroy
+    session[:user_id] = nil
+    redirect_to root_url, notice: "Logged out!"
   end
 
 private
