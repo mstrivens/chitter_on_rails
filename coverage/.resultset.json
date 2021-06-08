@@ -25,6 +25,52 @@
           null
         ]
       },
+      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/controllers/posts_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          23,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          53,
+          17,
+          null,
+          36,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          17,
+          null,
+          null
+        ]
+      },
       "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/controllers/sessions_controller.rb": {
         "lines": [
           1,
@@ -55,27 +101,6 @@
           null,
           1,
           5,
-          null,
-          null
-        ]
-      },
-      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          51,
-          15,
-          null,
-          36,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          15,
           null,
           null
         ]
@@ -116,7 +141,7 @@
         "lines": [
           1,
           1,
-          1,
+          null,
           null
         ]
       },
@@ -136,22 +161,8 @@
           1,
           null
         ]
-      },
-      "/Users/maxstrivens/Documents/Programming/Projects/post_course_projects/chitter/app/controllers/posts_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1623160844
+    "timestamp": 1623165385
   }
 }

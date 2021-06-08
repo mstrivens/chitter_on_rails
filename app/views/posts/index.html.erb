@@ -10,4 +10,7 @@
 <% if current_user %>
 <a href='/posts/new' name='new_post'>New Post</a>
 <% end %>
-<p>Hello World!</p>
+</br>
+<% @posts.each do |post| %>
+<p><%= post.body %><p>
+<% end %>
