@@ -18,6 +18,10 @@ RSpec.describe User, type: :model do
       expect(@user).to respond_to(:email)
     end
 
+    it 'responds to email' do
+      expect(@user).to respond_to(:id)
+    end
+
     it 'is valid' do
       expect(@user).to be_valid
     end
