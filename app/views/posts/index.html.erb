@@ -11,8 +11,10 @@
   <a href='/posts/new' name='new_post'>New Post</a>
 <% end %>
 </br>
-<% @posts.each do |post| %>
-  <p><%= post.body %><p>
-  <p>Posted at:<%= post.created_at %>
-  <p>User: <%=username_of_poster(post)%>    
-<% end %>
+<div class="container text-center">
+  <% @posts.each do |post| %>
+    <p><%= post.body %><p>
+    <p>Posted at:<%= post.created_at %>
+    <p>User: <%=username_of_poster(post)%>
+  <% end %>
+</div>
