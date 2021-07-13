@@ -3,6 +3,7 @@
 To update gemfile and database
 
 ```
+yarn
 bundle install
 rails db:create
 rails db:migrate
