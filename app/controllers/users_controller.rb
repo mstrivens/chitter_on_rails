@@ -14,15 +14,15 @@ class UsersController < ApplicationController
   end
 
   private
+  def user_params
+    params.require(:user).permit(:username, :password, :email)
+  end
+
   def create_user_object_with(user_params)
     @user = User.new(user_params)
   end
 
   def save_user_object
     @user.save
-  end
-
-  def user_params
-    params.require(:user).permit(:username, :password, :email)
   end
 end
