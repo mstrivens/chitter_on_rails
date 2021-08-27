@@ -9,7 +9,8 @@
         <%= form.text_field :username %>
         <div class='alert'>
           <% @user.errors.full_messages_for(:username).each do |message| %>
-            <div><%= message %></div>
+            <div class="alert alert-warning" role="alert">
+            <%= message %></div>
           <% end %>
       </div>
     </div>
@@ -32,7 +33,8 @@
       </div>
       <div class='alert'>
         <% @user.errors.full_messages_for(:email).each do |message| %>
-          <div><%= message %></div>
+        <div class="alert alert-warning" role="alert">
+        <%= message %></div>
         <% end %>
       </div>
     </div>

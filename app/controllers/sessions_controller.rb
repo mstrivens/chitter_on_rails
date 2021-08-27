@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       create_session
       redirect_to root_url, notice: "Logged in!"
     else
-      flash.now[:alert] = "Incorrect username or password"
+      flash[:alert] = "Incorrect username or password"
       render :new
     end
   end

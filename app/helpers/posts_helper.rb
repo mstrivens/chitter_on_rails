@@ -17,5 +17,4 @@ private
   def set_current_user_to(session_id)
     @current_user ||= User.find(session_id)
   end
-
 end

@@ -10,6 +10,12 @@ class PostsController < ApplicationController
   end
 
   def index
+    if session[:user_id]
+      set_current_user_to(session[:user_id])
+      flash[:notice] = "Welcome #{@current_user.username}"
+    else
+      @welcome = "Welcome to Chitter!"
+    end
     @posts = Post.order(created_at: :desc)
   end
 

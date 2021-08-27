@@ -1,21 +1,22 @@
-<p id='notice'><%= notice %></p>
+<!-- <p id='notice'><%= notice %></p> -->
+<%= @welcome %>
 </br>
 <% if current_user %>
-  <p>Welcome <%= current_user.username %></p>
-  <%= link_to "New Post", new_post_path, class: "nav-link" %>
+  <!-- <p>Welcome <%= current_user.username %></p> -->
+  <!-- <%= link_to "New Post", new_post_path, class: "nav-link" %> -->
   <!-- Below uses the route to assign the session destroy path to logout. The other paths are assigned directly using the existing rails routes-->
-  <%= link_to "Log-Out", logout_path, class: "nav-link" %>
+  <!-- <%= link_to "Log-Out", logout_path, class: "nav-link" %> -->
   <!-- <a href='/posts/new' name='new_post'>New Post</a>
   <a href='/logout' name='log-out'>Log-Out</a> -->
 <% else %>
-  <p>Welcome to Chitter</p>
-  <%= link_to "Sign-up", new_user_path, class: "nav-link" %>
+  <!-- <p>Welcome to Chitter</p> -->
+  <!-- <%= link_to "Sign-up", new_user_path, class: "nav-link" %> -->
   <!-- Changed from using url which could be subject to change to using path which is more robust -->
   <!-- <a href='/signup' name='sign-up'>Sign-up</a> -->
-  <%= link_to "Log-In", new_session_path, class: "nav-link" %>
+  <!-- <%= link_to "Log-In", new_session_path, class: "nav-link" %> -->
   <!-- <a href='/login' name='log-in'>Log-In</a> -->
 <% end %>
-<p id='notice'><%= notice %></p>
+<!-- <p id='notice'><%= notice %></p> -->
 </br>
 <div class="container text-center">
   <% @posts.each do |post| %>
